@@ -70,40 +70,7 @@
 
                             <div formArrayName="phoneNumbers">
 
-
-                              <!-- <div class="row" style="display: ruby;">
-                                <div class="col-md-9">
-                                  <div *ngFor="let phoneNumber of phoneNumbers.controls; let i=index">
-                                    <!-- The repeated alias template --
-                                    <label for="phoneNumbers-{{ i }}">phoneNumbers:</label>
-                                    <input id="phoneNumbers-{{ i }}" type="text" [formControlName]="i" maxlength="11" placeholder="Enter phone number">
-                                    <button type="button" class="btn btn-outline-danger" (click)="removePhoneNumber(i)">Remove</button>
-                                  </div>
-                                  <div class="alarm" *ngIf="contactForm.get('phoneNumbers')!.invalid && contactForm.get('phoneNumbers')!.touched">
-                                    phoneNumber is required and Max Length is 11 number.
-                                  </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                  <button type="button" class="btn btn-outline-primary" (click)="addPhoneNumbers()">+ </button>
-
-                                </div>
-                              </div> -->
-
-
-
                             </div>
-
-
-
-                            <!-- <div formArrayName="phoneNumbers">
-                              <div *ngFor="let phone of contactForm.value.phoneNumbers; let i=index">
-                                <input type="text" [formControlName]="i">
-                                <button type="button" (click)="removePhoneNumber(i)">Remove</button>
-                              </div>
-                            </div>
-                            <button type="button" (click)="addPhoneNumber()">Add another Phone </button> -->
                           </div>
 
 
@@ -169,10 +136,6 @@
 
                           </div>
                         </div>
-
-
-
-
                           <button class="btn btn-success mt-4 " type="submit" [disabled]="contactForm.invalid">Submit</button>
                           <button class="btn btn-danger mt-4 mx-2" type="button" (click)="resetForm()">Reset Form</button>
 
